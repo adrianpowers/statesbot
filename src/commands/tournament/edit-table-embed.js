@@ -76,15 +76,15 @@ module.exports = {
       let embedIndex;
       let baseIndex;
 
-      if (table <= 5) {
+      if (table <= 4) {
         embedIndex = 0;
         baseIndex = (table - 1) * 4;
-      } else if (table <= 10) {
+      } else if (table <= 8) {
         embedIndex = 1;
-        baseIndex = (table - 6) * 4;
+        baseIndex = (table - 5) * 4;
       } else {
         embedIndex = 2;
-        baseIndex = (table - 11) * 4;
+        baseIndex = (table - 9) * 4;
       }
 
       embeds[embedIndex].data.fields[baseIndex + 1].value = playerOne; // Player One field
